@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FactureFlash - Relance d'impayés pour freelances créatifs</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>FactureFlash</h1>
+            <p class="tagline">Récupérez vos impayés sans stress, concentrez-vous sur votre créativité</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Fini les impayés qui plombent votre trésorerie</h2>
+                    <p>Solution spécialisée pour les graphistes, vidéastes et designers freelances qui en ont assez de courir après leurs paiements.</p>
+                    <button id="cta-primary" class="btn-primary">Obtenir l'accès anticipé</button>
+                </div>
+                <div class="hero-image">
+                    <div class="calculator">
+                        <h3>Calculez vos pertes dues aux impayés</h3>
+                        <div class="calculator-form">
+                            <div class="form-group">
+                                <label for="unpaid-amount">Montant total impayé (€)</label>
+                                <input type="number" id="unpaid-amount" min="0" value="2000">
+                            </div>
+                            <div class="form-group">
+                                <label for="time-spent">Heures passées en relance</label>
+                                <input type="number" id="time-spent" min="0" value="5">
+                            </div>
+                            <div class="form-group">
+                                <label for="hourly-rate">Votre TJM (€)</label>
+                                <input type="number" id="hourly-rate" min="0" value="400">
+                            </div>
+                            <button id="calculate-btn" class="btn-secondary">Calculer</button>
+                        </div>
+                        <div id="calculation-result" class="hidden">
+                            <p>Vos impayés vous coûtent réellement: <span id="total-loss">0</span> €</p>
+                            <p>Dont <span id="time-loss">0</span> € en temps perdu en relances</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="benefits">
+            <div class="container">
+                <h2>Pourquoi FactureFlash est fait pour vous</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <h3>Modèles spécifiques aux créatifs</h3>
+                        <p>Relances adaptées à votre métier et à votre relation client, avec le ton juste.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Automatisation intelligente</h3>
+                        <p>Programmez vos séquences de relance et laissez FactureFlash s'occuper du suivi.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Suivi en temps réel</h3>
+                        <p>Tableau de bord pour visualiser l'état de vos factures et l'efficacité des relances.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Intégration avec vos outils</h3>
+                        <p>Compatible avec les logiciels de facturation préférés des freelances créatifs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing">
+            <div class="container">
+                <h2>Offre de lancement</h2>
+                <div class="pricing-cards">
+                    <div class="pricing-card featured">
+                        <h3>Early Bird</h3>
+                        <div class="price">19€<span>/mois</span></div>
+                        <p class="price-subtitle">Prix normal: 29€/mois</p>
+                        <ul>
+                            <li>Relances illimitées</li>
+                            <li>5 modèles spécifiques aux créatifs</li>
+                            <li>Suivi des paiements</li>
+                            <li>Notifications automatiques</li>
+                            <li>Support prioritaire</li>
+                        </ul>
+                        <button class="btn-primary cta-pricing">Réserver votre place</button>
+                        <p class="pricing-note">Offre limitée aux 100 premiers inscrits</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <div class="container">
+                <h2>Ce que disent les freelances créatifs</h2>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <p>"Depuis que j'utilise FactureFlash, j'ai récupéré 3 factures qui traînaient depuis des mois. Le temps gagné est inestimable."</p>
+                        <div class="testimonial-author">Sophie L., Graphiste indépendante</div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Les modèles de relance sont parfaits, professionnels sans être agressifs. Mes clients règlent maintenant dans les délais."</p>
+                        <div class="testimonial-author">Marc D., Motion Designer</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="lead-capture">
+            <div class="container">
+                <h2>Ne perdez plus de temps ni d'argent avec les impayés</h2>
+                <p>Rejoignez la liste d'attente pour être parmi les premiers à utiliser FactureFlash</p>
+                <form id="lead-form">
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Votre email professionnel" required>
+                        <button type="submit" class="btn-primary">Obtenir l'accès anticipé</button>
+                    </div>
+                    <div id="form-message" class="hidden"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 FactureFlash - Solution de relance d'impayés pour freelances créatifs</p>
+        </div>
+    </footer>
+</body>
+</html>
